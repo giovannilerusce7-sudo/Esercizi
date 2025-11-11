@@ -42,6 +42,46 @@
     flex-grow: 3;
     text-align: center;
   }
+    .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: green;
+            flex-grow: 1;
+            text-align: center;
+        }
+             footer {
+            background-color: aquamarine;
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            text-align: center;
+        }
+           @media (max-width: 768px) {
+            .container {
+                background-color: bisque;
+                display: flex;
+                flex-direction: column;
+            }
+            .left,
+            .center,
+            .right {
+                flex-grow: 1;
+            }
+        }
+        {
+            .container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+            .center {
+                order: -1;
+                width: 100vw;
+            }
+        }
+
 </style>
 <body>
     <header>HEADER</header>
