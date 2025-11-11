@@ -17,20 +17,40 @@
         width:100vw
         height:100vh;
  }
- header{
-    position: static
- top:0;
- background-color:red;
-  display:flex
-  justify-content:center;   
-  align-items:center;
+   header{
+    position: sticky
+   top:0;
+   background-color:red;
+   display:flex
+   justify-content:center;   
+   align-items:center;
    min: height 30px;
 }
- 
+ .left{
+    display: flex
+    justify-content:center;
+    align-items:center
+ background-color: orange;
+  flex-grow:1;
+  text-align:center;
+ }
+  
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3;
+    text-align: center;
+  }
 </style>
 <body>
     <header>HEADER</header>
     <div class="container">
+        <div class="left">LEFT</div>
+        <main class="center">CENTER</main>
+        <div class="right">RIGHT</div>
+    </div>
+    <footer>FOOTER</footer>
         
 
     
