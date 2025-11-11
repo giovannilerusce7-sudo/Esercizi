@@ -1,5 +1,8 @@
-.{
+header{
     border-style: solid;
-    width: 10px;
+    border-width: 1px;
+    border-color=black;
+    background-color: red;
+
 
 }
