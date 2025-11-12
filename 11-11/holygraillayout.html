@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    *{
-        padding: 0;;
-        margin:0;
-        box-sizing: :border-box;
-    }
-    .container{
-        background-color: red;
-        display:flex;
-        width:100vw
-        height:100vh;
- }
-   header{
-    position: sticky
-   top:0;
-   background-color:red;
-   display:flex
-   justify-content:center;   
-   align-items:center;
-   min: height 30px;
-}
- .left{
-    display: flex
-    justify-content:center;
-    align-items:center
- background-color: orange;
-  flex-grow:1;
-  text-align:center;
- }
-  
-  .center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 3;
-    text-align: center;
-  }
-    .right {
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: red;
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+        header {
+            position: sticky;
+            top: 0;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 30px;
+        }
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: orange;
+            flex-grow: 1;
+            text-align: center;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 3;
+            text-align: center;
+        }
+        .right {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -50,14 +49,14 @@
             flex-grow: 1;
             text-align: center;
         }
-             footer {
+        footer {
             background-color: aquamarine;
             position: fixed;
             bottom: 0;
             width: 100vw;
             text-align: center;
         }
-           @media (max-width: 768px) {
+        @media (max-width: 768px) {
             .container {
                 background-color: bisque;
                 display: flex;
@@ -69,7 +68,7 @@
                 flex-grow: 1;
             }
         }
-        {
+        @media (min-width: 769px) and (max-width: 1024px) {
             .container {
                 display: flex;
                 flex-direction: row;
@@ -81,18 +80,14 @@
                 width: 100vw;
             }
         }
-
-</style>
-<body>
-    <header>HEADER</header>
-    <div class="container">
-        <div class="left">LEFT</div>
-        <main class="center">CENTER</main>
-        <div class="right">RIGHT</div>
-    </div>
-    <footer>FOOTER</footer>
-        
-
-    
-</body>
+    </style>
+    <body>
+        <header>HEADER</header>
+        <div class="container">
+            <div class="left">LEFT</div>
+            <main class="center">MAIN</main>
+            <div class="right">RIGHT</div>
+        </div>
+        <footer>FOOTER</footer>
+    </body>
 </html>
