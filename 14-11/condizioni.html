@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>js1</title>
+  </head>
+  <body>
+    <h1>Condizioni in JavaScript</h1>
+    <script>
+      let a = 20;
+      if (a <= 18) {
+        console.log("minorenne");
+      } else {
+        console.log("maggiorenne");
+      }
+
+      let voto = 75;
+      if (voto >= 90) {
+        console.log("A");
+      } else if (voto >= 80) {
+        console.log("B");
+      } else if (voto >= 70) {
+        console.log("C");
+      } else if (voto >= 60) {
+        console.log("D");
+      } else {
+        console.log("F");
+      }
+
+      // ciclo for//
+      for (let i = 0; i <= 5; i++) {
+        console.log("numero:", i);
+      }
+      function saluta(nome) {
+        console.log("Ciao " + nome + "!");
+      }
+      saluta("Giovanni");
+    </script>
+  </body>
+</html>
