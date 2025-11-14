@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object</title>
+  </head>
+  <body>
+    <h1>Oggetti in JavaScript</h1>
+    <script>
+      let car = {
+        marca: "Totoyota",
+        modello: "Corolla",
+        anno: 2020,
+        colore: "rosso",
+        targa: "AB123CD",
+      };
+      console.log(car);
+      console.table(car);
+      console.log(car.modello); //accesso alla proprietà modello
+      let carmodello = car.modello;
+      console.log("Modello dell'auto:", carmodello);
+      let persona = {
+        nome: "ANNA",
+        età: 30,
+        saluta: function () {
+          console.log("Ciao, mi chiamo " + this.nome);
+        },
+      };
+      console.log(persona);
+      persona.saluta(); //chiamata al metodo saluta
+      let libro = {
+        titolo: "Il grande Gatsby",
+        autore: "F. Scott Fitzgerald",
+        annoPubblicazione: "1925",
+        dettagli: {
+          editore: "Scribner",
+          pagine: 218,
+          genere: "romanzo",
+        },
+      };
+      console.log(
+        "il titolo del libro è:",
+        libro.titolo,
+        "scritto da:",
+        libro.autore,
+        "l'editore è :",
+        libro.dettagli.editore
+      );
+    </script>
+  </body>
+</html>
