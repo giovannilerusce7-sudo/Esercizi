@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Prima lezione js</h1>
+    <script>
+      /* metodi per stampare in console
+      log generico
+      errore messaggio di errore
+      warn messaggio di avviso
+      info messaggio informativo*/
+      console.log("Ciao mondo");
+      console.warn("Questo è un messaggio di warn!");
+      console.error("Questo è un messaggio di errore!");
+      console.info("Questo è un messaggio di info!");
+      let x = 10;
+      console.log("prima il valore di x è:", x);
+      x = 20;
+      console.log("dopo il valore di x è:", x);
+      const y = 5;
+      console.log("il valore di y è:", y);
+      /* y = 15; // Questo causerà un errore perché y è una costante*/
+      let z; /* dichiarazione di una variabile senza inizializzarla */
+      console.log("il valore di z è:", z); /* stampa 'undefined' */
+      z = 30;
+      console.log("dopo l'assegnazione il valore di z è:", z);
+      let nome = "Mario";
+      let cognome = "Rossi";
+      let eta = 25;
+
+      console.log(
+        "Mi chiamo " + nome + " " + cognome + " e ho " + eta + " anni."
+      );
+      console.log("ciao " + nome + " " + cognome + ",");
+      //boleaan//
+      let isStudent = true;
+      let isfemale = false;
+      console.log("isStudent:", isStudent);
+      console.log("isfemale:", isfemale);
+      /* null */
+      let niente = null;
+      let indefinito;
+      console.log("niente:", niente);
+      console.log("indefinito:", indefinito);
+      console.log(typeof nome); // string
+      console.log(typeof eta); // number
+      console.log(typeof isStudent); // boolean
+      console.log(typeof niente); // object (this is a known quirk in JavaScript)
+      let array = [1, 2, 3, 4, 5];
+      console.log(typeof array); // object);
+      let oggetti = { nome: "Mario", cognome: "Rossi", eta: 25 };
+      console.log(typeof oggetti); // object
+      console.log(typeof indefinito);
+    </script>
+  </body>
+</html>
