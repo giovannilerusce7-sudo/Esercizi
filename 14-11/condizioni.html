@@ -6,7 +6,7 @@
     <title>js1</title>
   </head>
   <body>
-    <h1>Condizioni in JavaScript</h1>
+    <h1>Condizioni, cicli e funzioni in JavaScript</h1>
     <script>
       let a = 20;
       if (a <= 18) {
@@ -36,6 +36,19 @@
         console.log("Ciao " + nome + "!");
       }
       saluta("Giovanni");
+      //somma di tre numeri//
+      function somma(a, b, c) {
+        return a + b + c;
+      }
+      let risultato = somma(5, 10, 15, 20); //il quarto numero viene ignorato//
+      console.log("La somma è:", risultato);
+      let risultato2 = somma(2, 4, 6);
+      console.log("La somma è:", risultato2);
+      //funzione raddoppia//
+      function raddoppia(numero) {
+        return numero * 2;
+      }
+      console.log("Raddoppio di 5:", raddoppia(5));
     </script>
   </body>
 </html>
