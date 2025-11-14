@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARRAY</title>
+  </head>
+  <body>
+    <h1>Array in JavaScript</h1>
+    <script>
+      let colori = ["rosso", "verde", "blue", "giallo "];
+      console.log("Array colori:", colori);
+      console.log(colori.length); //lunghezza dell'array
+      console.log(colori[0]); //primo elemento
+      console.log(colori[4]); //terzo elemento
+      console.table(colori); //stampa l'array in formato tabellare
+      let blu = colori[2];
+      console.log("Colore selezionato:", blu); //stampa il colore blu
+      colori.push("viola"); //aggiunge un elemento alla fine dell'array
+      console.table(colori);
+      console.log("Array dopo push:", colori);
+      colori.push("arancione", "nero");
+      console.log("array dopo push", colori); //aggiunge elementi alla fine dell'array
+      console.table(colori);
+      let ultimo = colori.pop(); //rimuove l'ultimo elemento dell'array
+      console.table(colori);
+      console.log("Elemento rimosso:", ultimo);
+      for (let i = 0; i < colori.length; i++) {
+        console.log("Colore in posizione", i, ":", colori[i]);
+      }
+    </script>
+  </body>
+</html>
