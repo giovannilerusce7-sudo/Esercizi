@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generatore di Schede Utente</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎯 Generatore di Schede Utente</h1>
+
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" placeholder="Inserisci il nome" />
+      </div>
+
+      <div class="form-group">
+        <label for="eta">Età:</label>
+        <input id="eta" type="number" placeholder="Inserisci l'età" min="0" />
+      </div>
+
+      <div class="form-group">
+        <label for="professione">Professione:</label>
+        <input
+          id="professione"
+          type="text"
+          placeholder="Inserisci la professione (es: studente, developer, designer)"
+        />
+      </div>
+
+      <div class="button-group">
+        <button id="btnAggiungi">Aggiungi utente</button>
+        <button id="btnFiltra">Filtra maggiorenni</button>
+      </div>
+
+      <h2>Lista Utenti</h2>
+      <div id="lista"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

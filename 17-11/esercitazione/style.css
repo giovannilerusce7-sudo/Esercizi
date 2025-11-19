@@ -1,0 +1,235 @@
+/* ========================================
+RETRO STYLE CSS
+   ======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "MS Sans Serif", "Microsoft Sans Serif", sans-serif;
+  background: #008080; /* Teal classico Windows 98 */
+  min-height: 100vh;
+  padding: 20px;
+  color: #000;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #c0c0c0; /* Grigio Windows 98 */
+  border: 2px solid;
+  border-color: #ffffff #000000 #000000 #ffffff;
+  padding: 2px;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+h1 {
+  background: linear-gradient(90deg, #000080, #1084d0); /* Barra blu Windows */
+  color: #ffffff;
+  padding: 4px 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.form-group {
+  background: #c0c0c0;
+  padding: 15px;
+  margin-bottom: 3px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 4px;
+  border: 2px solid;
+  border-color: #808080 #ffffff #ffffff #808080;
+  background: #ffffff;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size: 11px;
+  color: #000;
+}
+
+input:focus {
+  outline: 1px dotted #000;
+  outline-offset: -2px;
+}
+
+.button-group {
+  display: flex;
+  gap: 5px;
+  padding: 15px;
+  background: #c0c0c0;
+  margin-bottom: 3px;
+}
+
+button {
+  flex: 1;
+  padding: 6px 12px;
+  border: 2px solid;
+  border-color: #ffffff #000000 #000000 #ffffff;
+  background: #c0c0c0;
+  font-family: "MS Sans Serif", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  box-shadow: 1px 1px 0px #000000;
+}
+
+button:active {
+  border-color: #000000 #ffffff #ffffff #000000;
+  padding: 7px 11px 5px 13px;
+  box-shadow: none;
+}
+
+button:hover {
+  background: #d4d0c8;
+}
+
+#btnAggiungi {
+  background: #c0c0c0;
+}
+
+#btnFiltra {
+  background: #c0c0c0;
+}
+
+h2 {
+  background: #c0c0c0;
+  color: #000;
+  padding: 15px;
+  margin-bottom: 3px;
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: 2px solid;
+  border-color: #808080 #ffffff;
+}
+
+#lista {
+  background: #c0c0c0;
+  padding: 15px;
+  min-height: 200px;
+}
+
+.user-card {
+  background: #ffffff;
+  border: 2px solid;
+  border-color: #808080 #ffffff #ffffff #808080;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 0px #000000;
+}
+
+.user-card:hover {
+  background: #fffbf0;
+}
+
+.user-card h3 {
+  color: #000080;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.user-card p {
+  color: #000;
+  line-height: 1.5;
+  font-size: 11px;
+  margin: 3px 0;
+}
+
+.categoria {
+  display: inline-block;
+  padding: 2px 8px;
+  font-size: 10px;
+  font-weight: bold;
+  margin-top: 8px;
+  border: 2px solid;
+  border-color: #ffffff #000000 #000000 #ffffff;
+  text-transform: uppercase;
+}
+
+.categoria.studente {
+  background: #0000ff;
+  color: #ffffff;
+}
+
+.categoria.developer {
+  background: #00ff00;
+  color: #000000;
+}
+
+.categoria.designer {
+  background: #ff00ff;
+  color: #ffffff;
+}
+
+.categoria.altro {
+  background: #ffff00;
+  color: #000000;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #808080;
+  font-size: 11px;
+  border: 2px dashed #808080;
+  background: #ffffff;
+}
+
+/* Effetto "premuto" per il focus */
+input:focus,
+button:focus {
+  outline: 1px dotted #000000;
+  outline-offset: -4px;
+}
+
+/* Scrollbar stile Windows 98 (solo per browser Webkit) */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-track {
+  background: #c0c0c0;
+  border: 1px solid #808080;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #000000 #000000 #ffffff;
+}
+
+::-webkit-scrollbar-button {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #000000 #000000 #ffffff;
+  height: 16px;
+  width: 16px;
+}
+
+/* Finestra di dialogo stile Windows 98 */
+.window-title {
+  background: linear-gradient(90deg, #000080, #1084d0);
+  color: #ffffff;
+  padding: 3px 5px;
+  font-size: 11px;
+  font-weight: bold;
+}
