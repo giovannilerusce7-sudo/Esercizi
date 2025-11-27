@@ -1,9 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Dinamica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>1.1 Playlist Dinamica</h1>
+        <p>Esecuzione dei passaggi con JavaScript:</p>
+
+        <div class="result-box">
+            <h3>Stato Iniziale:</h3>
+            <pre id="initial-playlist"></pre>
+        </div>
+
+        <div class="result-box">
+            <h3>Dopo Aggiunta Brani:</h3>
+            <pre id="after-add"></pre>
+        </div>
+
+        <div class="result-box">
+            <h3>Dopo Spostamento Primo Brano:</h3>
+            <pre id="after-move"></pre>
+        </div>
+
+        <div class="result-box">
+            <h3>Brani Centrali Estratti (Copia):</h3>
+            <pre id="central-tracks"></pre>
+        </div>
+        
+        <div class="result-box">
+            <h3>Stato Finale Playlist Originale:</h3>
+            <pre id="final-playlist-original"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>

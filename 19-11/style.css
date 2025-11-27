@@ -1,0 +1,65 @@
+/* Stili di base */
+body {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+input,
+button {
+  padding: 8px;
+  margin-right: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Stili per lo STEP 4 e 5 */
+.completata {
+  text-decoration: line-through; /* Aggiunge una linea sopra il testo */
+  color: gray; /* Cambia colore del testo */
+}
+
+.evidenziata {
+  background-color: #fffacd; /* Giallo chiaro */
+  border-left: 5px solid #ffeb3b;
+}
+
+/* Stili aggiuntivi per migliorare l'aspetto */
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bottone-rimuovi {
+  margin-left: 15px;
+  cursor: pointer;
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+#messaggio {
+  font-style: italic;
+  color: #888;
+  margin-top: 10px;
+}
+
+#bottoneSvuota {
+  margin-top: 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
